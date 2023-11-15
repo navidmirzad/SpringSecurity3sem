@@ -4,9 +4,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloWorld {
+public class ContactController {
 
-    @GetMapping("/test")
-    public String getTest() { return "Hello World!"; }
+    @GetMapping("/contact")
+    public String getContactDetails() {
+        return "Here are the contactdetails from db";
+    }
+
 
 }

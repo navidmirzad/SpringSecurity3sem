@@ -4,9 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloWorld {
+public class AccountController {
 
-    @GetMapping("/test")
-    public String getTest() { return "Hello World!"; }
+    @GetMapping("/myaccount")
+    public String myAccount() {
+        return "here are the account details from db";
+    }
 
 }
