@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class LoginController {
+public class LoginController  {
 
     @Autowired
     CustomerRepository customerRepository;
